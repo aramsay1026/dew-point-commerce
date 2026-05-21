@@ -43,7 +43,7 @@ CREATE TABLE product(
 	size_ml INT NOT NULL DEFAULT 500,
 	flavor VARCHAR(100),
     -- indicates if we still distribute this product
-	active BOOLEAN,
+	active BOOLEAN NOT NULL DEFAULT TRUE,
 
 	CONSTRAINT productPK PRIMARY KEY (productID),
     CONSTRAINT supplierFK
@@ -55,8 +55,8 @@ CREATE TABLE product(
 	CONSTRAINT sizeCheck
 		CHECK (size_ml IN (250, 500, 750, 1000, 1500, 2000)),
 	CONSTRAINT invCheck
-		CHECK (inventory >= 0),
-	active BOOLEAN NOT NULL DEFAULT TRUE
+		CHECK (inventory >= 0)
+	
         
 -- ID starts at 1
 )AUTO_INCREMENT = 1;
@@ -71,12 +71,7 @@ CREATE TABLE subscription(
 	status ENUM('Active', 'Inactive') NOT NULL DEFAULT 'Active',
 	start_date DATE NOT NULL DEFAULT(CURRENT_DATE),
     -- Default condition, calculates end date based on subscription duration
-	end_date DATE GENERATED ALWAYS AS (
-		CASE duration
-			WHEN 'Month' THEN start_date + INTERVAL 1 MONTH
-            WHEN '6 Month' THEN start_date + INTERVAL 6 MONTH
-            WHEN 'Year' THEN start_date + INTERVAL 1 year
-		END) STORED,
+	end_date DATE NOT NULL,
 	CONSTRAINT subPK PRIMARY KEY (subscriptionID),
 	CONSTRAINT sub_userFK
 		FOREIGN KEY (userID) 
@@ -134,7 +129,7 @@ CREATE TABLE alkaline_water(
 
 CREATE TABLE transaction(
 	transactionID INT NOT NULL AUTO_INCREMENT,
-	customerID INT NOT NULL,
+	userID INT NOT NULL,
 	productID INT NOT NULL,
 	quantity INT NOT NULL,
     
@@ -143,7 +138,7 @@ CREATE TABLE transaction(
     
     CONSTRAINT tranPK PRIMARY KEY (transactionID),
     CONSTRAINT tran_custFK
-		FOREIGN KEY (customerID)
+		FOREIGN KEY (userID)
         REFERENCES user(userID)
         ON UPDATE CASCADE
         ON DELETE RESTRICT,
@@ -178,7 +173,6 @@ CREATE TABLE product_review(
 	reviewID VARCHAR(20) NOT NULL,
 	userID INT NOT NULL,
 	transactionID INT NOT NULL,
-	productID INT NOT NULL,
 	rating INT,
 	review_comment TEXT,
 	review_date DATE NOT NULL DEFAULT(CURRENT_DATE),
@@ -193,12 +187,7 @@ CREATE TABLE product_review(
 		FOREIGN KEY (transactionID)
         REFERENCES transaction(transactionID)
         ON UPDATE CASCADE
-        ON DELETE RESTRICT,
-   CONSTRAINT rev_prodFK
-	FOREIGN KEY (productID)
-    REFERENCES product(productID)
-    ON UPDATE CASCADE
-	ON DELETE RESTRICT
+        ON DELETE RESTRICT
 );
 
 
