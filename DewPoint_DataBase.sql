@@ -150,7 +150,7 @@ CREATE TABLE transaction(
 )AUTO_INCREMENT = 6000001;
 
 CREATE TABLE shipment(
-	shipmentID INT NOT NULL,
+	shipmentID INT NOT NULL AUTO_INCREMENT,
 	transactionID INT NOT NULL,
 	status ENUM('Received', 'Label Created','In Transit', 'Out for Delivery','Delivered') NOT NULL DEFAULT 'Received', 
 	schedule_date DATE,
