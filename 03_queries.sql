@@ -6,7 +6,8 @@
 
 USE dew_point;
 
--- TASK 1: List which products we currently have in inventory
+-- Task 1: show all products we currently have in stock
+-- only showing active ones, sorted by type and name so its easy to read
 SELECT
     p.productID,
     p.product_name,
@@ -20,28 +21,38 @@ JOIN supplier s ON s.supplierID = p.supplierID
 WHERE p.active = TRUE
 ORDER BY p.product_type, p.product_name;
 
--- TASK 2: Create a new product
+-- Task 2: add a new product to the database
+-- we also need to insert into the sparkling_water subtype table
+-- used LAST_INSERT_ID() to grab the productID that was just created
 INSERT INTO product (supplierID, product_name, product_type, inventory, size_ml, flavor, active)
 VALUES (101, 'Pomegranate Pop', 'Sparkling', 100, 500, 'Pomegranate', TRUE);
 
--- Use LAST_INSERT_ID() to link the subtype row to the new product
 INSERT INTO sparkling_water (productID, carbonation_level)
 VALUES (LAST_INSERT_ID(), 'Medium');
 
--- TASK 3: Modify the amount of a particular product in inventory
+-- Task 3: update the inventory count for a specific product
+-- adding 50 units to Citrus Sparkle (productID 1)
 UPDATE product
 SET inventory = inventory + 50
 WHERE productID = 1;
 
--- TASK 4: Delete a product from inventory
--- Two patterns shown:
---   (a) SOFT DELETE 
---   (b) HARD DELETE 
+-- Task 4: delete a product from inventory
+-- we have two ways to do this depending on the situation:
+--   a) soft delete - just mark it inactive so we don't lose order history
+--   b) hard delete - actually remove it, only works if nothing references it
+
+-- a) soft delete for Deep Earth Mineral (productID 29) since it has transactions
 UPDATE product
 SET active = FALSE
 WHERE productID = 29;
 
--- TASK 5: Most popular products for a given time range
+-- b) hard delete for Pomegranate Pop (productID 31) which we just added in task 2
+-- have to delete from sparkling_water first because of the foreign key
+DELETE FROM sparkling_water WHERE productID = 31;
+DELETE FROM product       WHERE productID = 31;
+
+-- Task 5: get the most popular products between two dates
+-- using SUM of quantity to see total units sold, ordered highest to lowest
 SELECT
     p.productID,
     p.product_name,
@@ -55,7 +66,9 @@ GROUP BY p.productID, p.product_name, p.product_type
 ORDER BY units_sold DESC, num_orders DESC
 LIMIT 10;
 
--- TASK 6: Least popular products for a given time range
+-- Task 6: get the least popular products for the same time range
+-- using LEFT JOIN so products with zero sales still show up
+-- COALESCE handles the NULLs from the left join so they show as 0
 SELECT
     p.productID,
     p.product_name,
@@ -71,7 +84,8 @@ GROUP BY p.productID, p.product_name, p.product_type
 ORDER BY units_sold ASC, num_orders ASC
 LIMIT 10;
 
--- TASK 7: Users who haven't purchased in a few months
+-- Task 7: find users who haven't bought anything in the last 3 months
+-- also including users who have never ordered at all 
 SELECT
     u.userID,
     u.first_name,
@@ -85,7 +99,9 @@ HAVING MAX(t.receivedAt) IS NULL
     OR MAX(t.receivedAt) < DATE_SUB(CURDATE(), INTERVAL 3 MONTH)
 ORDER BY last_purchase ASC;
 
--- 7b) For each inactive user, the products they NORMALLY buy
+-- Task 7 continued: for those inactive users, show what products they usually buy
+-- this is so we can include their favorite products in the promo email
+-- the subquery finds the same inactive users from above
 SELECT
     u.userID,
     u.first_name,
@@ -101,7 +117,6 @@ FROM user u
 JOIN transaction t ON t.userID    = u.userID
 JOIN product     p ON p.productID = t.productID
 WHERE u.userID IN (
-    -- subquery: inactive users (no purchase in last 3 months)
     SELECT u2.userID
     FROM user u2
     LEFT JOIN transaction t2 ON t2.userID = u2.userID
