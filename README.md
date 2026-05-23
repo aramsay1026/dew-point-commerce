@@ -41,8 +41,20 @@ dew-point-commerce/
 │   ├── DewPoint_Delivery_Relationship_Diagram.vsdx   # Editable relationship diagram source
 │   └── Images/
 │       └── DewPointLogo.png                          # Company logo
+├── CSV_files/
+│   ├── alkaline_water.csv                            # Database Table of alkaline water products
+│   ├── mineral_water.csv                             # Database Table of mineral water products
+│   ├── sparkling_water.csv                           # Database Table of sparkling water products
+│   ├── product_review.csv                            # Database Table of customer reviews
+│   ├── product.csv                                   # Database Table of all products
+│   ├── shipment.csv                                  # Database Table of all shipments to customers
+│   ├── subscription.csv                              # Database Table of all customer subscriptions
+│   ├── supplier.csv                                  # Database Table of all business suppliers
+│   ├── transaction.csv                               # Database Table of all customer transactions
+│   └── user.csv                                      # Database Table of all users
 │
 ├── DewPoint_DataBase.sql      # Creates the database and all tables
+├── Dew_Point_Commerce.twbx    # Tableau workbook of database visualizations
 ├── 02_insert_data.sql         # Loads sample data into every table
 ├── 03_queries.sql             # The 7 required task queries
 └── README.md                  # This file
