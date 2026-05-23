@@ -40,6 +40,7 @@ CREATE TABLE product(
 	product_name VARCHAR(100),
 	product_type ENUM('Sparkling','Alkaline','Mineral') NOT NULL,
 	inventory INT NOT NULL,
+    price_each DECIMAL(6,2) NOT NULL,
 	size_ml INT NOT NULL DEFAULT 500,
 	flavor VARCHAR(100),
     -- indicates if we still distribute this product
@@ -132,6 +133,7 @@ CREATE TABLE transaction(
 	userID INT NOT NULL,
 	productID INT NOT NULL,
 	quantity INT NOT NULL,
+    total_cost DECIMAL(8,2) NOT NULL,
     
     CONSTRAINT valQuantity CHECK (quantity > 0),
 	receivedAt DATE NOT NULL DEFAULT(CURRENT_DATE), 
