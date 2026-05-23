@@ -1,0 +1,41 @@
+"productID";"supplierID";"product_name";"product_type";"inventory";"size_ml";"flavor";"active"
+1;101;"Citrus Sparkle";"Sparkling";240;500;"Lemon";1
+2;101;"Berry Fizz";"Sparkling";180;500;"Mixed Berry";1
+3;102;"Mint Spritz";"Sparkling";95;500;"Mint";1
+4;102;"Original Sparkle";"Sparkling";320;750;"Plain";1
+5;103;"Peach Bliss";"Sparkling";150;500;"Peach";1
+6;103;"Lime Twist";"Sparkling";200;500;"Lime";1
+7;104;"Grapefruit Pop";"Sparkling";60;500;"Grapefruit";1
+8;104;"Cucumber Splash";"Sparkling";45;500;"Cucumber";1
+9;105;"Raspberry Rush";"Sparkling";130;500;"Raspberry";1
+10;105;"Blackberry Bubble";"Sparkling";80;500;"Blackberry";1
+11;106;"Pure Alkaline 9.5";"Alkaline";300;1000;"";1
+12;106;"High pH Hydrate";"Alkaline";210;750;"";1
+13;108;"Mountain Alkaline";"Alkaline";175;1000;"";1
+14;108;"Glacier Alkaline";"Alkaline";140;500;"";1
+15;108;"Daily Alkaline 8.5";"Alkaline";400;500;"";1
+16;109;"Sport Alkaline";"Alkaline";220;750;"";1
+17;109;"Premium pH 10";"Alkaline";70;1000;"";1
+18;110;"Reset Alkaline";"Alkaline";110;500;"";1
+19;110;"Recovery Alkaline";"Alkaline";55;1500;"";1
+20;110;"Wellness Alkaline";"Alkaline";165;500;"";1
+21;101;"Spring Mineral Classic";"Mineral";260;750;"";1
+22;102;"Alpine Mineral";"Mineral";190;1000;"";1
+23;103;"Volcanic Mineral";"Mineral";85;500;"";1
+24;104;"Artesian Mineral";"Mineral";150;750;"";1
+25;105;"Coastal Mineral";"Mineral";120;500;"";1
+26;106;"Highland Mineral";"Mineral";205;1000;"";1
+27;108;"Pristine Mineral";"Mineral";40;500;"";1
+28;109;"Mountain Spring";"Mineral";175;750;"";1
+29;110;"Deep Earth Mineral";"Mineral";25;1500;"";0
+30;101;"Cascade Mineral";"Mineral";310;500;"";1
+31;111;"Watermelon Wave";"Sparkling";160;500;"Watermelon";1
+32;111;"Coconut Fizz";"Sparkling";110;500;"Coconut";1
+33;112;"Pineapple Burst";"Sparkling";75;500;"Pineapple";1
+34;112;"Plain Crisp";"Sparkling";200;750;"Plain";1
+35;112;"Ultra Alkaline 9.8";"Alkaline";180;1000;"";1
+36;113;"Clean Slate pH 9";"Alkaline";130;750;"";1
+37;113;"Vitality Alkaline";"Alkaline";90;500;"";1
+38;111;"Summit Spring";"Mineral";145;750;"";1
+39;112;"Rainier Reserve";"Mineral";60;1000;"";1
+40;113;"Desert Aquifer";"Mineral";95;500;"";1
