@@ -1,16 +1,16 @@
-"supplierID";"name";"address";"phone_number";"email";"status";"onboard";"offboard"
-101;"Alpine Springs Co";"100 Mountain Peak, Boulder, CO";"800-555-011";"info@alpinesprings.com";"Active";"2024-01-15";""
-102;"Pacific H2O";"200 Coastal Hwy, Eugene, OR";"800-555-022";"sales@pach2o.com";"Active";"2024-03-10";""
-103;"Icelandic Pure";"300 Glacier Rd, Reykjavik, IC";"800-555-033";"import@icepure.com";"Active";"2024-06-01";""
-104;"Desert Oasis Waters";"400 Dune Rd, Phoenix, AZ";"800-555-044";"contact@desertoasis.com";"Inactive";"2023-01-01";"2025-12-31"
-105;"Fuji Springs";"500 Volcanic Way, Shizuoka, JP";"800-555-055";"global@fujisprings.com";"Active";"2025-02-18";""
-106;"Mineral Craft";"600 Limestone Ridge, Louisville, KY";"800-555-066";"support@mincraft.com";"Active";"2025-05-20";""
-107;"Blue Wave Bottlers";"700 Ocean Surf, San Diego, CA";"800-555-077";"orders@bluewave.com";"Active";"2025-08-12";""
-108;"HydroVibe Inc";"800 Tech Way, San Jose, CA";"800-555-088";"b2b@hydrovibe.com";"Active";"2025-11-05";""
-109;"Cascade Liquid Assets";"900 Fall Line, Portland, OR";"800-555-099";"ops@cascadeliquid.com";"Active";"2026-01-10";""
-110;"Zen Alkaline Waters";"150 Serenity Lane, Sedona, AZ";"800-555-100";"om@zenalkaline.com";"Active";"2026-02-01";""
-111;"Polar Frost";"250 Tundra Trail, Anchorage, AK";"800-555-112";"sales@polarfrost.com";"Active";"2026-03-15";""
-112;"Artesian Alliance";"350 Wellhead Dr, Memphis, TN";"800-555-113";"info@artesianall.com";"Active";"2026-04-01";""
-113;"Napa Valley Minerals";"450 Vineyard Rd, Napa, CA";"800-555-114";"trade@napaminerals.com";"Active";"2026-04-20";""
-114;"Old Stream Bottling";"550 Heritage Way, Roanoke, VA";"800-555-115";"history@oldstream.com";"Inactive";"2022-05-01";"2024-05-01"
-115;"Fresh Drop Distro";"650 Raincloud St, Seattle, WA";"800-555-116";"hello@freshdrop.com";"Active";"2026-05-01";""
+﻿supplierID,name,address,street,city,state,phone_number,email,status,onboard,offboard
+101,Alpine Springs Co,"100 Mountain Peak, Boulder, CO",100 Mountain Peak,Boulder,CO,800-555-011,info@alpinesprings.com,Active,1/15/2024,
+102,Pacific H2O,"200 Coastal Hwy, Eugene, OR",200 Coastal Hwy,Eugene,OR,800-555-022,sales@pach2o.com,Active,3/10/2024,
+103,Icelandic Pure,"300 Glacier Rd, Reykjavik, IC",300 Glacier Rd,Reykjavik,WA,800-555-033,import@icepure.com,Active,6/1/2024,
+104,Desert Oasis Waters,"400 Dune Rd, Phoenix, AZ",400 Dune Rd,Phoenix,AZ,800-555-044,contact@desertoasis.com,Inactive,1/1/2023,12/31/2025
+105,Fuji Springs,"500 Volcanic Way, Shizuoka, JP",500 Volcanic Way,Shizuoka,AZ,800-555-055,global@fujisprings.com,Active,2/18/2025,
+106,Mineral Craft,"600 Limestone Ridge, Louisville, KY",600 Limestone Ridge,Louisville,KY,800-555-066,support@mincraft.com,Active,5/20/2025,
+107,Blue Wave Bottlers,"700 Ocean Surf, San Diego, CA",700 Ocean Surf,San Diego,CA,800-555-077,orders@bluewave.com,Active,8/12/2025,
+108,HydroVibe Inc,"800 Tech Way, San Jose, CA",800 Tech Way,San Jose,CA,800-555-088,b2b@hydrovibe.com,Active,11/5/2025,
+109,Cascade Liquid Assets,"900 Fall Line, Portland, OR",900 Fall Line,Portland,OR,800-555-099,ops@cascadeliquid.com,Active,1/10/2026,
+110,Zen Alkaline Waters,"150 Serenity Lane, Sedona, AZ",150 Serenity Lane,Sedona,AZ,800-555-100,om@zenalkaline.com,Active,2/1/2026,
+111,Polar Frost,"250 Tundra Trail, Anchorage, AK",250 Tundra Trail,Anchorage,AK,800-555-112,sales@polarfrost.com,Active,3/15/2026,
+112,Artesian Alliance,"350 Wellhead Dr, Memphis, TN",350 Wellhead Dr,Memphis,TN,800-555-113,info@artesianall.com,Active,4/1/2026,
+113,Napa Valley Minerals,"450 Vineyard Rd, Napa, CA",450 Vineyard Rd,Napa,CA,800-555-114,trade@napaminerals.com,Active,4/20/2026,
+114,Old Stream Bottling,"550 Heritage Way, Roanoke, VA",550 Heritage Way,Roanoke,VA,800-555-115,history@oldstream.com,Inactive,5/1/2022,5/1/2024
+115,Fresh Drop Distro,"650 Raincloud St, Seattle, WA",650 Raincloud St,Seattle,WA,800-555-116,hello@freshdrop.com,Active,5/1/2026,

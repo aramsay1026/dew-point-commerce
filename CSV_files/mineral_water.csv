@@ -1,8 +1,8 @@
-"productID";"calcium_mg";"magnesium_mg";"sodium_mg";"mineral_source"
-2;45.2;12.5;5.0;"Rocky Mountains"
-6;110.0;40.25;15.1;"Icelandic Underground Aquifer"
-9;85.0;30.0;22.0;"Kentucky Bluegrass Aquifer"
-12;12.0;4.5;1.2;"Cascade Range Streams"
-15;0.0;0.0;0.0;"Deep Well Pure Artesian"
-16;200.5;85.4;45.0;"Napa Hills Mineral Spring"
-17;35.0;10.0;8.0;"Old Blue Ridge Spring"
+﻿productID,calcium_mg,magnesium_mg,sodium_mg,mineral_source
+2,45.2,12.5,5,Rocky Mountains
+6,110,40.25,15.1,Icelandic Underground Aquifer
+9,85,30,22,Kentucky Bluegrass Aquifer
+12,12,4.5,1.2,Cascade Range Streams
+15,0,0,0,Deep Well Pure Artesian
+16,200.5,85.4,45,Napa Hills Mineral Spring
+17,35,10,8,Old Blue Ridge Spring

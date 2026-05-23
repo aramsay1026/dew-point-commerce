@@ -1,26 +1,26 @@
-"userID";"first_name";"last_name";"email";"phone_number";"address"
-10001;"Amy";"Ramsay";"amy.ramsay@example.com";"206-555-0101";"123 Pine St, Seattle, WA 98101"
-10002;"Bea";"Sauve";"bea.sauve@example.com";"206-555-0102";"456 Cedar Ave, Seattle, WA 98102"
-10003;"Bob";"Johnson";"bob.j@example.com";"555-0103";"789 Ocean Blvd, Miami, FL"
-10004;"Alice";"Williams";"alice.w@example.com";"555-0104";"101 Puddle Ln, Austin, TX"
-10005;"Charlie";"Brown";"charlie.b@example.com";"555-0105";"202 Stream Rd, Denver, CO"
-10006;"Diana";"Prince";"diana.p@example.com";"555-0106";"303 River Dr, Boston, MA"
-10007;"Evan";"Wright";"evan.w@example.com";"555-0107";"404 Lake Way, Chicago, IL"
-10008;"Fiona";"Gallagher";"fiona.g@example.com";"555-0108";"505 Aqua Cir, Las Vegas, NV"
-10009;"George";"Costanza";"george.c@example.com";"555-0109";"606 Marine Dr, New York, NY"
-10010;"Hannah";"Montana";"hannah.m@example.com";"555-0110";"707 Creek Ct, Nashville, TN"
-10011;"Ian";"Malcolm";"ian.m@example.com";"555-0111";"808 Geyser Pl, San Diego, CA"
-10012;"Julia";"Roberts";"julia.r@example.com";"555-0112";"909 Cascade Way, Phoenix, AZ"
-10013;"Kevin";"Bacon";"kevin.b@example.com";"555-0113";"111 Glacier St, Salt Lake, UT"
-10014;"Laura";"Croft";"laura.c@example.com";"555-0114";"222 Fountain Ave, San Francisco, CA"
-10015;"Michael";"Scott";"michael.s@example.com";"555-0115";"333 Mist Blvd, Scranton, PA"
-10016;"Nancy";"Drew";"nancy.d@example.com";"555-0116";"444 Clue Ave, River Heights, IL"
-10017;"Oscar";"Martinez";"oscar.m@example.com";"555-0117";"555 Accounting Way, Scranton, PA"
-10018;"Pam";"Beesly";"pam.b@example.com";"555-0118";"777 Art Lane, New York, NY"
-10019;"Quinn";"Fabray";"quinn.f@example.com";"555-0119";"888 Lima Rd, Lima, OH"
-10020;"Ray";"Romano";"ray.r@example.com";"555-0120";"999 Queens Blvd, Queens, NY"
-10021;"Sarah";"Connor";"sarah.c@example.com";"555-0121";"123 Tech Noir St, Los Angeles, CA"
-10022;"Tom";"Hanks";"tom.h@example.com";"555-0122";"456 Forest Ridge, Castaway, CA"
-10023;"Ursula";"Buffay";"ursula.b@example.com";"555-0123";"789 Twin Towers, New York, NY"
-10024;"Victor";"Frankenstein";"victor.f@example.com";"555-0124";"101 Modern Prometheus Rd, Geneva, CH"
-10025;"Wendy";"Darling";"wendy.d@example.com";"555-0125";"202 Neverland Way, London, UK"
+﻿userID,first_name,last_name,email,phone_number,address,street,city,state
+10001,Amy,Ramsay,amy.ramsay@example.com,206-555-0101,"123 Pine St, Seattle, WA 98101",123 Pine St,Seattle,WA
+10002,Bea,Sauve,bea.sauve@example.com,206-555-0102,"456 Cedar Ave, Seattle, WA 98102",456 Cedar Ave,Seattle,WA
+10003,Bob,Johnson,bob.j@example.com,555-0103,"789 Ocean Blvd, Miami, FL",789 Ocean Blvd,Miami,FL
+10004,Alice,Williams,alice.w@example.com,555-0104,"101 Puddle Ln, Austin, TX",101 Puddle Ln,Austin,TX
+10005,Charlie,Brown,charlie.b@example.com,555-0105,"202 Stream Rd, Denver, CO",202 Stream Rd,Denver,CO
+10006,Diana,Prince,diana.p@example.com,555-0106,"303 River Dr, Boston, MA",303 River Dr,Boston,MA
+10007,Evan,Wright,evan.w@example.com,555-0107,"404 Lake Way, Chicago, IL",404 Lake Way,Chicago,IL
+10008,Fiona,Gallagher,fiona.g@example.com,555-0108,"505 Aqua Cir, Las Vegas, NV",505 Aqua Cir,Las Vegas,NV
+10009,George,Costanza,george.c@example.com,555-0109,"606 Marine Dr, New York, NY",606 Marine Dr,New York,NY
+10010,Hannah,Montana,hannah.m@example.com,555-0110,"707 Creek Ct, Nashville, TN",707 Creek Ct,Nashville,TN
+10011,Ian,Malcolm,ian.m@example.com,555-0111,"808 Geyser Pl, San Diego, CA",808 Geyser Pl,San Diego,NV
+10012,Julia,Roberts,julia.r@example.com,555-0112,"909 Cascade Way, Phoenix, AZ",909 Cascade Way,Phoenix,AZ
+10013,Kevin,Bacon,kevin.b@example.com,555-0113,"111 Glacier St, Salt Lake, UT",111 Glacier St,Salt Lake City,UT
+10014,Laura,Croft,laura.c@example.com,555-0114,"222 Fountain Ave, San Francisco, CA",222 Fountain Ave,San Francisco,NV
+10015,Michael,Scott,michael.s@example.com,555-0115,"333 Mist Blvd, Scranton, PA",333 Mist Blvd,Scranton,PA
+10016,Nancy,Drew,nancy.d@example.com,555-0116,"444 Clue Ave, River Heights, IL",444 Clue Ave,River Heights,IL
+10017,Oscar,Martinez,oscar.m@example.com,555-0117,"555 Accounting Way, Scranton, PA",555 Accounting Way,Scranton,PA
+10018,Pam,Beesly,pam.b@example.com,555-0118,"777 Art Lane, New York, NY",777 Art Lane,New York,NY
+10019,Quinn,Fabray,quinn.f@example.com,555-0119,"888 Lima Rd, Lima, OH",888 Lima Rd,Lima,OH
+10020,Ray,Romano,ray.r@example.com,555-0120,"999 Queens Blvd, Queens, NY",999 Queens Blvd,Seattle,NY
+10021,Sarah,Connor,sarah.c@example.com,555-0121,"123 Tech Noir St, Los Angeles, CA",123 Tech Noir St,Los Angeles,NV
+10022,Tom,Hanks,tom.h@example.com,555-0122,"456 Forest Ridge, Castaway, CA",456 Forest Ridge,Las Vegas,NV
+10023,Ursula,Buffay,ursula.b@example.com,555-0123,"789 Twin Towers, New York, NY",789 Twin Towers,New York,NY
+10024,Victor,Frankenstein,victor.f@example.com,555-0124,"101 Modern Prometheus Rd, Geneva, CH",101 Modern Prometheus Rd,Geneva,CH
+10025,Wendy,Darling,wendy.d@example.com,555-0125,"202 Neverland Way, London, UK",202 Neverland Way,London,UK

@@ -1,26 +1,26 @@
-"subscriptionID";"userID";"plan_name";"frequency";"duration";"box_size";"status";"start_date";"end_date"
-100001;10001;"Mist";"Weekly";"Month";"4";"Active";"2026-05-01";"2026-06-01"
-100002;10002;"Dew";"Bi Weekly";"6 Month";"8";"Active";"2026-01-10";"2026-07-10"
-100003;10003;"Drizzle";"Monthly";"Year";"16";"Active";"2026-01-01";"2027-01-01"
-100004;10004;"Downpour";"Weekly";"Year";"24";"Active";"2026-03-15";"2027-03-15"
-100005;10005;"Dew";"Bi Weekly";"6 Month";"8";"Inactive";"2025-06-01";"2025-12-01"
-100006;10006;"Mist";"Weekly";"Month";"4";"Active";"2026-05-15";"2026-06-15"
-100007;10007;"Drizzle";"Bi Weekly";"6 Month";"16";"Active";"2026-02-20";"2026-08-20"
-100008;10008;"Downpour";"Monthly";"Year";"24";"Active";"2026-01-05";"2027-01-05"
-100009;10009;"Dew";"Monthly";"6 Month";"8";"Active";"2026-04-01";"2026-10-01"
-100010;10010;"Mist";"Weekly";"Month";"4";"Active";"2026-05-20";"2026-06-20"
-100011;10011;"Drizzle";"Weekly";"Year";"16";"Active";"2026-01-15";"2027-01-15"
-100012;10012;"Downpour";"Bi Weekly";"6 Month";"24";"Active";"2026-03-01";"2026-09-01"
-100013;10013;"Dew";"Bi Weekly";"6 Month";"8";"Active";"2026-02-14";"2026-08-14"
-100014;10014;"Mist";"Monthly";"Month";"4";"Inactive";"2025-10-01";"2025-11-01"
-100015;10015;"Downpour";"Weekly";"Year";"24";"Active";"2026-05-01";"2027-05-01"
-100016;10016;"Mist";"Weekly";"Month";"4";"Active";"2026-05-02";"2026-06-02"
-100017;10017;"Dew";"Bi Weekly";"6 Month";"8";"Active";"2026-03-10";"2026-09-10"
-100018;10018;"Drizzle";"Monthly";"Year";"16";"Active";"2026-02-01";"2027-02-01"
-100019;10019;"Downpour";"Weekly";"Year";"24";"Active";"2026-04-11";"2027-04-11"
-100020;10020;"Dew";"Bi Weekly";"6 Month";"8";"Active";"2026-05-01";"2026-11-01"
-100021;10021;"Mist";"Weekly";"Month";"4";"Active";"2026-05-18";"2026-06-18"
-100022;10022;"Drizzle";"Monthly";"Year";"16";"Active";"2026-01-20";"2027-01-20"
-100023;10023;"Downpour";"Weekly";"Year";"24";"Active";"2026-03-01";"2027-03-01"
-100024;10024;"Dew";"Bi Weekly";"6 Month";"8";"Active";"2026-02-28";"2026-08-28"
-100025;10025;"Drizzle";"Monthly";"Year";"16";"Active";"2026-05-10";"2027-05-10"
+﻿subscriptionID,userID,plan_name,frequency,duration,box_size,status,start_date,end_date
+100001,10001,Mist,Weekly,Month,4,Active,5/1/2026,6/1/2026
+100002,10002,Dew,Bi Weekly,6 Month,8,Active,1/10/2026,7/10/2026
+100003,10003,Drizzle,Monthly,Year,16,Active,1/1/2026,1/1/2027
+100004,10004,Downpour,Weekly,Year,24,Active,3/15/2026,3/15/2027
+100005,10005,Dew,Bi Weekly,6 Month,8,Inactive,6/1/2025,12/1/2025
+100006,10006,Mist,Weekly,Month,4,Active,5/15/2026,6/15/2026
+100007,10007,Drizzle,Bi Weekly,6 Month,16,Active,2/20/2026,8/20/2026
+100008,10008,Downpour,Monthly,Year,24,Active,1/5/2026,1/5/2027
+100009,10009,Dew,Monthly,6 Month,8,Active,4/1/2026,10/1/2026
+100010,10010,Mist,Weekly,Month,4,Active,5/20/2026,6/20/2026
+100011,10011,Drizzle,Weekly,Year,16,Active,1/15/2026,1/15/2027
+100012,10012,Downpour,Bi Weekly,6 Month,24,Active,3/1/2026,9/1/2026
+100013,10013,Dew,Bi Weekly,6 Month,8,Active,2/14/2026,8/14/2026
+100014,10014,Mist,Monthly,Month,4,Inactive,10/1/2025,11/1/2025
+100015,10015,Downpour,Weekly,Year,24,Active,5/1/2026,5/1/2027
+100016,10016,Mist,Weekly,Month,4,Active,5/2/2026,6/2/2026
+100017,10017,Dew,Bi Weekly,6 Month,8,Active,3/10/2026,9/10/2026
+100018,10018,Drizzle,Monthly,Year,16,Active,2/1/2026,2/1/2027
+100019,10019,Downpour,Weekly,Year,24,Active,4/11/2026,4/11/2027
+100020,10020,Dew,Bi Weekly,6 Month,8,Active,5/1/2026,11/1/2026
+100021,10021,Mist,Weekly,Month,4,Active,5/18/2026,6/18/2026
+100022,10022,Drizzle,Monthly,Year,16,Active,1/20/2026,1/20/2027
+100023,10023,Downpour,Weekly,Year,24,Active,3/1/2026,3/1/2027
+100024,10024,Dew,Bi Weekly,6 Month,8,Active,2/28/2026,8/28/2026
+100025,10025,Drizzle,Monthly,Year,16,Active,5/10/2026,5/10/2027

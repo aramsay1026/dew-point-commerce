@@ -1,31 +1,31 @@
-"shipmentID";"transactionID";"status";"schedule_date";"shipment_date";"tracking_number";"address"
-1000001;6000001;"Delivered";"2026-05-04";"2026-05-04";"TRK-990001";"123 Water St, Seattle, WA"
-1000002;6000002;"Delivered";"2026-05-07";"2026-05-08";"TRK-990002";"456 Rain Ave, Portland, OR"
-1000003;6000003;"Delivered";"2026-05-08";"2026-05-08";"TRK-990003";"789 Ocean Blvd, Miami, FL"
-1000004;6000004;"Out for Delivery";"2026-05-12";"";"TRK-990004";"101 Puddle Ln, Austin, TX"
-1000005;6000005;"In Transit";"2026-05-18";"";"TRK-990005";"303 River Dr, Boston, MA"
-1000006;6000006;"Label Created";"2026-05-20";"";"TRK-990006";"404 Lake Way, Chicago, IL"
-1000007;6000007;"Received";"2026-05-22";"";"TRK-990007";"505 Aqua Cir, Las Vegas, NV"
-1000008;6000008;"Received";"2026-05-23";"";"TRK-990008";"606 Marine Dr, New York, NY"
-1000009;6000009;"Received";"2026-05-24";"";"TRK-990009";"707 Creek Ct, Nashville, TN"
-1000010;6000010;"Received";"2026-05-25";"";"TRK-990010";"808 Geyser Pl, San Diego, CA"
-1000011;6000011;"Received";"2026-05-25";"";"TRK-990011";"909 Cascade Way, Phoenix, AZ"
-1000012;6000012;"Received";"2026-05-26";"";"TRK-990012";"111 Glacier St, Salt Lake, UT"
-1000013;6000013;"Received";"2026-05-26";"";"TRK-990013";"333 Mist Blvd, Scranton, PA"
-1000014;6000014;"Delivered";"2026-05-06";"2026-05-06";"TRK-990014";"444 Clue Ave, River Heights, IL"
-1000015;6000015;"Delivered";"2026-05-13";"2026-05-13";"TRK-990015";"555 Accounting Way, Scranton, PA"
-1000016;6000016;"Delivered";"2026-05-14";"2026-05-15";"TRK-990016";"777 Art Lane, New York, NY"
-1000017;6000017;"Delivered";"2026-04-17";"2026-04-17";"TRK-990017";"888 Lima Rd, Lima, OH"
-1000018;6000018;"Delivered";"2026-05-04";"2026-05-04";"TRK-990018";"999 Queens Blvd, Queens, NY"
-1000019;6000019;"In Transit";"2026-05-21";"";"TRK-990019";"123 Tech Noir St, Los Angeles, CA"
-1000020;6000020;"Label Created";"2026-05-16";"";"TRK-990020";"456 Forest Ridge, Castaway, CA"
-1000021;6000021;"Delivered";"2026-05-10";"2026-05-10";"TRK-990022";"789 Twin Towers, New York, NY"
-1000022;6000022;"Delivered";"2026-05-12";"2026-05-12";"TRK-990022";"101 Modern Prometheus Rd, Geneva, CH"
-1000023;6000023;"Label Created";"2026-05-12";"";"TRK-990023";"202 Neverland Way, London, UK"
-1000024;6000024;"In Transit";"2026-05-17";"";"TRK-990024";"123 Water St, Seattle, WA"
-1000025;6000025;"Received";"2026-05-22";"";"TRK-990025";"456 Rain Ave, Portland, OR"
-1000026;6000026;"Received";"2026-05-24";"";"TRK-990026";"101 Puddle Ln, Austin, TX"
-1000027;6000027;"Received";"2026-05-25";"";"TRK-990027";"555 Accounting Way, Scranton, PA"
-1000028;6000028;"Received";"2026-05-25";"";"TRK-990028";"456 Forest Ridge, Castaway, CA"
-1000029;6000029;"Delivered";"2025-08-12";"2025-08-12";"TRK-990029";"202 Stream Rd, Denver, CO"
-1000030;6000030;"Delivered";"2025-10-17";"2025-10-17";"TRK-990030";"222 Fountain Ave, San Francisco, CA"
+﻿shipmentID,transactionID,status,schedule_date,shipment_date,tracking_number,address,address - Split 1,city,state
+1000001,6000001,Delivered,5/4/2026,5/4/2026,TRK-990001,"123 Water St, Seattle, WA",123 Water St,Seattle,WA
+1000002,6000002,Delivered,5/7/2026,5/8/2026,TRK-990002,"456 Rain Ave, Portland, OR",456 Rain Ave,Portland,OR
+1000003,6000003,Delivered,5/8/2026,5/8/2026,TRK-990003,"789 Ocean Blvd, Miami, FL",789 Ocean Blvd,Miami,FL
+1000004,6000004,Out for Delivery,5/12/2026,,TRK-990004,"101 Puddle Ln, Austin, TX",101 Puddle Ln,Austin,TX
+1000005,6000005,In Transit,5/18/2026,,TRK-990005,"303 River Dr, Boston, MA",303 River Dr,Boston,MA
+1000006,6000006,Label Created,5/20/2026,,TRK-990006,"404 Lake Way, Chicago, IL",404 Lake Way,Chicago,IL
+1000007,6000007,Received,5/22/2026,,TRK-990007,"505 Aqua Cir, Las Vegas, NV",505 Aqua Cir,Las Vegas,NV
+1000008,6000008,Received,5/23/2026,,TRK-990008,"606 Marine Dr, New York, NY",606 Marine Dr,New York,NY
+1000009,6000009,Received,5/24/2026,,TRK-990009,"707 Creek Ct, Nashville, TN",707 Creek Ct,Nashville,TN
+1000010,6000010,Received,5/25/2026,,TRK-990010,"808 Geyser Pl, San Diego, CA",808 Geyser Pl,San Diego,NV
+1000011,6000011,Received,5/25/2026,,TRK-990011,"909 Cascade Way, Phoenix, AZ",909 Cascade Way,Phoenix,AZ
+1000012,6000012,Received,5/26/2026,,TRK-990012,"111 Glacier St, Salt Lake, UT",111 Glacier St,Salt Lake City,UT
+1000013,6000013,Received,5/26/2026,,TRK-990013,"333 Mist Blvd, Scranton, PA",333 Mist Blvd,Scranton,PA
+1000014,6000014,Delivered,5/6/2026,5/6/2026,TRK-990014,"444 Clue Ave, River Heights, IL",444 Clue Ave,River Heights,IL
+1000015,6000015,Delivered,5/13/2026,5/13/2026,TRK-990015,"555 Accounting Way, Scranton, PA",555 Accounting Way,Scranton,PA
+1000016,6000016,Delivered,5/14/2026,5/15/2026,TRK-990016,"777 Art Lane, New York, NY",777 Art Lane,New York,NY
+1000017,6000017,Delivered,4/17/2026,4/17/2026,TRK-990017,"888 Lima Rd, Lima, OH",888 Lima Rd,Lima,OH
+1000018,6000018,Delivered,5/4/2026,5/4/2026,TRK-990018,"999 Queens Blvd, Queens, NY",999 Queens Blvd,Seattle,NY
+1000019,6000019,In Transit,5/21/2026,,TRK-990019,"123 Tech Noir St, Los Angeles, CA",123 Tech Noir St,Los Angeles,NV
+1000020,6000020,Label Created,5/16/2026,,TRK-990020,"456 Forest Ridge, Castaway, CA",456 Forest Ridge,Las Vegas,NV
+1000021,6000021,Delivered,5/10/2026,5/10/2026,TRK-990022,"789 Twin Towers, New York, NY",789 Twin Towers,New York,NY
+1000022,6000022,Delivered,5/12/2026,5/12/2026,TRK-990022,"101 Modern Prometheus Rd, Geneva, CH",101 Modern Prometheus Rd,Geneva,NV
+1000023,6000023,Label Created,5/12/2026,,TRK-990023,"202 Neverland Way, London, UK",202 Neverland Way,London,WA
+1000024,6000024,In Transit,5/17/2026,,TRK-990024,"123 Water St, Seattle, WA",123 Water St,Seattle,WA
+1000025,6000025,Received,5/22/2026,,TRK-990025,"456 Rain Ave, Portland, OR",456 Rain Ave,Portland,OR
+1000026,6000026,Received,5/24/2026,,TRK-990026,"101 Puddle Ln, Austin, TX",101 Puddle Ln,Austin,TX
+1000027,6000027,Received,5/25/2026,,TRK-990027,"555 Accounting Way, Scranton, PA",555 Accounting Way,Scranton,PA
+1000028,6000028,Received,5/25/2026,,TRK-990028,"456 Forest Ridge, Castaway, CA",456 Forest Ridge,Las Vegas,NV
+1000029,6000029,Delivered,8/12/2025,8/12/2025,TRK-990029,"202 Stream Rd, Denver, CO",202 Stream Rd,Denver,CO
+1000030,6000030,Delivered,10/17/2025,10/17/2025,TRK-990030,"222 Fountain Ave, San Francisco, CA",222 Fountain Ave,San Francisco,NV
