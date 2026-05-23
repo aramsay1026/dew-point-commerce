@@ -217,3 +217,129 @@ INSERT INTO product_review (reviewID, userID, transactionID, rating, review_comm
 ('R0010', 10010, 6000030, 2, 'Mint Spritz was too subtle for my taste.',                                 '2025-08-25'),
 ('R0011', 10011, 6000032, 5, 'Consistent quality every shipment.',                                       '2026-05-20'),
 ('R0012', 10001, 6000036, 4, 'Berry Fizz is a nice change of pace.',                                     '2026-03-29');
+
+
+-- ==== Generated Data =====
+
+-- 8 new users (userIDs will be 10013–10020)
+INSERT INTO user (first_name, last_name, email, phone_number, address) VALUES
+('Marcus',   'Webb',       'marcus.webb@example.com',      '206-555-0113', '18 Fir Ave, Tacoma, WA 98403'),
+('Priya',    'Nair',       'priya.nair@example.com',       '408-555-0114', '7 Valley Rd, San Jose, CA 95101'),
+('Owen',     'Fitzgerald', 'owen.fitzgerald@example.com',  '503-555-0115', '34 Maple St, Salem, OR 97301'),
+('Zoe',      'Kim',        'zoe.kim@example.com',          '425-555-0116', '520 Birch Ln, Redmond, WA 98052'),
+('Darius',   'Cole',       'darius.cole@example.com',      '214-555-0117', '88 Lone Star Blvd, Dallas, TX 75201'),
+('Nina',     'Alvarez',    'nina.alvarez@example.com',     '702-555-0118', '15 Neon Dr, Las Vegas, NV 89101'),
+('Theo',     'Okafor',     'theo.okafor@example.com',      '404-555-0119', '222 Peach Tree St, Atlanta, GA 30301'),
+('Simone',   'Durand',     'simone.durand@example.com',    '360-555-0120', '9 Harbor View Rd, Bellingham, WA 98225');
+
+-- 3 new suppliers (supplierIDs will be 111–113)
+INSERT INTO supplier (name, address, phone_number, email, status, onboard, offboard) VALUES
+('Summit Water Works',    '400 Summit Rd, Yakima, WA 98901',        '509-555-1011', 'orders@summitwaterworks.com',  'Active',   '2025-08-01', NULL),
+('Rainier Pure Co',       '18 Rainier Ave, Auburn, WA 98001',        '253-555-1012', 'sales@rainierpure.com',        'Active',   '2025-10-15', NULL),
+('Crystal Aqua Ltd',      '66 Crystal Lake Dr, Reno, NV 89501',      '775-555-1013', 'info@crystalaqua.com',         'Active',   '2026-01-10', NULL);
+
+-- 10 new products: 4 sparkling (31–34), 3 alkaline (35–37), 3 mineral (38–40)
+INSERT INTO product (supplierID, product_name, product_type, inventory, size_ml, flavor, active) VALUES
+-- Sparkling (productID 31–34)
+(111, 'Watermelon Wave',    'Sparkling', 160, 500,  'Watermelon',  TRUE),
+(111, 'Coconut Fizz',       'Sparkling', 110, 500,  'Coconut',     TRUE),
+(112, 'Pineapple Burst',    'Sparkling',  75, 500,  'Pineapple',   TRUE),
+(112, 'Plain Crisp',        'Sparkling', 200, 750,  'Plain',       TRUE),
+-- Alkaline (productID 35–37)
+(112, 'Ultra Alkaline 9.8', 'Alkaline',  180, 1000, NULL,          TRUE),
+(113, 'Clean Slate pH 9',   'Alkaline',  130, 750,  NULL,          TRUE),
+(113, 'Vitality Alkaline',  'Alkaline',   90, 500,  NULL,          TRUE),
+-- Mineral (productID 38–40)
+(111, 'Summit Spring',      'Mineral',   145, 750,  NULL,          TRUE),
+(112, 'Rainier Reserve',    'Mineral',    60, 1000, NULL,          TRUE),
+(113, 'Desert Aquifer',     'Mineral',    95, 500,  NULL,          TRUE);
+
+-- Subtype rows for new products
+INSERT INTO sparkling_water (productID, carbonation_level) VALUES
+(31, 'Light'),
+(32, 'Medium'),
+(33, 'Heavy'),
+(34, 'Medium');
+
+INSERT INTO alkaline_water (productID, PH_Level) VALUES
+(35, 9.8),
+(36, 9.0),
+(37, 9.2);
+
+INSERT INTO mineral_water (productID, calcium_mg, magnesium_mg, sodium_mg, mineral_source) VALUES
+(38,  90.0,  32.0, 11.0, 'Summit Volcanic Aquifer, WA'),
+(39, 105.0,  40.5, 14.5, 'Rainier Glacial Melt, WA'),
+(40,  55.0,  19.0, 28.0, 'Mojave Desert Aquifer, NV');
+
+-- 8 new subscriptions (for new users 10013–10020)
+INSERT INTO subscription (userID, plan_name, frequency, duration, box_size, status, start_date) VALUES
+(10013, 'Dew',      'Bi Weekly', '6 Month', '8',  'Active',   '2026-02-01'),
+(10014, 'Mist',     'Monthly',   'Month',   '4',  'Active',   '2026-04-01'),
+(10015, 'Drizzle',  'Bi Weekly', 'Year',    '16', 'Active',   '2026-03-15'),
+(10016, 'Downpour', 'Weekly',    'Year',    '24', 'Active',   '2026-01-20'),
+(10017, 'Dew',      'Monthly',   '6 Month', '8',  'Active',   '2026-02-10'),
+(10018, 'Drizzle',  'Bi Weekly', '6 Month', '16', 'Inactive', '2025-09-01'),
+(10019, 'Mist',     'Monthly',   'Month',   '4',  'Active',   '2026-05-01'),
+(10020, 'Dew',      'Bi Weekly', 'Year',    '8',  'Active',   '2026-04-10');
+
+-- 20 new transactions covering new users, new products, and existing popular products
+-- transactionIDs will auto-assign starting at 6000041
+INSERT INTO transaction (userID, productID, quantity, receivedAt) VALUES
+(10013, 1,  8,  '2026-05-20'),
+(10013, 35, 6,  '2026-05-10'),
+(10013, 38, 4,  '2026-04-18'),
+(10014, 31, 12, '2026-05-19'),
+(10014, 36, 6,  '2026-04-30'),
+(10015, 4,  10, '2026-05-16'),
+(10015, 32, 8,  '2026-04-22'),
+(10015, 39, 4,  '2026-03-28'),
+(10016, 1,  24, '2026-05-21'),
+(10016, 35, 12, '2026-05-07'),
+(10016, 33, 6,  '2026-04-10'),
+(10017, 34, 8,  '2026-05-18'),
+(10017, 37, 6,  '2026-05-05'),
+(10017, 40, 4,  '2026-04-01'),
+(10018, 6,  6,  '2025-10-12'),
+(10018, 11, 4,  '2025-09-20'),
+(10019, 31, 4,  '2026-05-03'),
+(10019, 38, 6,  '2026-04-25'),
+(10020, 4,  8,  '2026-05-14'),
+(10020, 39, 6,  '2026-04-28');
+
+-- 20 new shipments (one per new transaction, transactionIDs 6000041–6000060)
+INSERT INTO shipment (transactionID, status, schedule_date, shipment_date, tracking_number, address) VALUES
+(6000041, 'Delivered',        '2026-05-21', '2026-05-22', 'TRK1041', '18 Fir Ave, Tacoma, WA 98403'),
+(6000042, 'Delivered',        '2026-05-11', '2026-05-12', 'TRK1042', '18 Fir Ave, Tacoma, WA 98403'),
+(6000043, 'Delivered',        '2026-04-19', '2026-04-20', 'TRK1043', '18 Fir Ave, Tacoma, WA 98403'),
+(6000044, 'Delivered',        '2026-05-20', '2026-05-21', 'TRK1044', '7 Valley Rd, San Jose, CA 95101'),
+(6000045, 'Delivered',        '2026-05-01', '2026-05-02', 'TRK1045', '7 Valley Rd, San Jose, CA 95101'),
+(6000046, 'Delivered',        '2026-05-17', '2026-05-18', 'TRK1046', '34 Maple St, Salem, OR 97301'),
+(6000047, 'Delivered',        '2026-04-23', '2026-04-24', 'TRK1047', '34 Maple St, Salem, OR 97301'),
+(6000048, 'Delivered',        '2026-03-29', '2026-03-30', 'TRK1048', '34 Maple St, Salem, OR 97301'),
+(6000049, 'Out for Delivery', '2026-05-22', NULL,         'TRK1049', '520 Birch Ln, Redmond, WA 98052'),
+(6000050, 'Delivered',        '2026-05-08', '2026-05-09', 'TRK1050', '520 Birch Ln, Redmond, WA 98052'),
+(6000051, 'Delivered',        '2026-04-11', '2026-04-12', 'TRK1051', '520 Birch Ln, Redmond, WA 98052'),
+(6000052, 'Delivered',        '2026-05-19', '2026-05-20', 'TRK1052', '88 Lone Star Blvd, Dallas, TX 75201'),
+(6000053, 'Delivered',        '2026-05-06', '2026-05-07', 'TRK1053', '88 Lone Star Blvd, Dallas, TX 75201'),
+(6000054, 'Delivered',        '2026-04-02', '2026-04-03', 'TRK1054', '88 Lone Star Blvd, Dallas, TX 75201'),
+(6000055, 'Delivered',        '2025-10-13', '2025-10-14', 'TRK1055', '15 Neon Dr, Las Vegas, NV 89101'),
+(6000056, 'Delivered',        '2025-09-21', '2025-09-22', 'TRK1056', '15 Neon Dr, Las Vegas, NV 89101'),
+(6000057, 'In Transit',       '2026-05-04', NULL,         'TRK1057', '222 Peach Tree St, Atlanta, GA 30301'),
+(6000058, 'Delivered',        '2026-04-26', '2026-04-27', 'TRK1058', '222 Peach Tree St, Atlanta, GA 30301'),
+(6000059, 'Label Created',    '2026-05-23', NULL,         'TRK1059', '9 Harbor View Rd, Bellingham, WA 98225'),
+(6000060, 'Delivered',        '2026-04-29', '2026-04-30', 'TRK1060', '9 Harbor View Rd, Bellingham, WA 98225');
+
+-- 12 new reviews (only for delivered transactions, referencing valid transactionIDs and userIDs)
+INSERT INTO product_review (reviewID, userID, transactionID, rating, review_comment, review_date) VALUES
+('R0013', 10013, 6000041, 5, 'Citrus Sparkle never disappoints. Great in a subscription.',         '2026-05-23'),
+('R0014', 10013, 6000042, 4, 'Ultra Alkaline is smooth and clean. Will reorder.',                  '2026-05-14'),
+('R0015', 10014, 6000044, 5, 'Watermelon Wave is incredibly refreshing. New favorite.',            '2026-05-22'),
+('R0016', 10015, 6000046, 4, 'Original Sparkle is reliable and crisp every time.',                 '2026-05-19'),
+('R0017', 10015, 6000047, 3, 'Coconut Fizz was interesting but a bit mild for me.',                '2026-04-25'),
+('R0018', 10016, 6000050, 5, 'Ultra Alkaline 9.8 is the best pH water I have tried.',              '2026-05-11'),
+('R0019', 10017, 6000052, 4, 'Plain Crisp is exactly what it says — clean and neutral.',           '2026-05-21'),
+('R0020', 10017, 6000053, 5, 'Vitality Alkaline has noticeably improved my hydration.',            '2026-05-09'),
+('R0021', 10018, 6000055, 2, 'Lime Twist was too carbonated for my preference.',                   '2025-10-16'),
+('R0022', 10019, 6000057, 4, 'Summit Spring has a nice mineral taste, not too strong.',            '2026-04-28'),
+('R0023', 10020, 6000059, 5, 'Original Sparkle is a household staple now.',                        '2026-05-16'),
+('R0024', 10001, 6000003, 5, 'Pure Alkaline 9.5 helped me cut out soda completely.',               '2026-04-26');
