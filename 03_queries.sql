@@ -24,8 +24,8 @@ ORDER BY p.product_type, p.product_name;
 -- Task 2: add a new product to the database
 -- we also need to insert into the sparkling_water subtype table
 -- used LAST_INSERT_ID() to grab the productID that was just created
-INSERT INTO product (supplierID, product_name, product_type, inventory, size_ml, flavor, active)
-VALUES (101, 'Pomegranate Pop', 'Sparkling', 100, 500, 'Pomegranate', TRUE);
+INSERT INTO product (supplierID, product_name, product_type, inventory, price_each,size_ml, flavor, active)
+VALUES (101, 'Pomegranate Pop', 'Sparkling', 100,3.50, 500, 'Pomegranate', TRUE);
 
 INSERT INTO sparkling_water (productID, carbonation_level)
 VALUES (LAST_INSERT_ID(), 'Medium');
