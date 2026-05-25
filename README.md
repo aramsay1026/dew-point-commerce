@@ -28,42 +28,47 @@ This project contains the entity-relationship diagram, normalized schema, and SQ
 ```
 dew-point-commerce/
 ├── Appendix/
-│   ├── DewPoint_Delivery_ERD_Boyce_Codd_NF (1).jpeg  # Normalized ER diagram (BCNF)
-│   ├── DewPoint_Delivery_ERD.vsdx                    # Editable ERD source file
-│   ├── DewPoint_Delivery_Relationship_Diagram.jpeg   # Relationship diagram
-│   ├── DewPoint_Delivery_Relationship_Diagram.vsdx   # Editable relationship diagram source
+│   ├── DewPoint_Delivery_ERD.jpeg
+│   ├── DewPoint_Delivery_ERD.vsdx
+│   ├── DewPoint_Delivery_ERD_Boyce_Codd_NF.jpeg
+│   ├── DewPoint_Delivery_Relationship_Diagram.jpeg
+│   ├── DewPoint_Delivery_Relationship_Diagram.vsdx
 │   └── Images/
-│       └── DewPointLogo.png                          # Company logo
+│       └── DewPointLogo.png
 ├── CSV_files/
-│   ├── alkaline_water.csv                            # Database Table of alkaline water products
-│   ├── mineral_water.csv                             # Database Table of mineral water products
-│   ├── sparkling_water.csv                           # Database Table of sparkling water products
-│   ├── product_review.csv                            # Database Table of customer reviews
-│   ├── product.csv                                   # Database Table of all products
-│   ├── shipment.csv                                  # Database Table of all shipments to customers
-│   ├── subscription.csv                              # Database Table of all customer subscriptions
-│   ├── supplier.csv                                  # Database Table of all business suppliers
-│   ├── transaction.csv                               # Database Table of all customer transactions
-│   └── user.csv                                      # Database Table of all users
-│
-├── DewPoint_DataBase.sql      # Creates the database and all tables
-├── Dew_Point_Commerce.twbx    # Tableau workbook of database visualizations
-├── 02_insert_data.sql         # Loads sample data into every table
-├── 03_queries.sql             # The 7 required task queries
-└── README.md                  # This file
+│   ├── alkaline_water.csv
+│   ├── mineral_water.csv
+│   ├── product.csv
+│   ├── product_review.csv
+│   ├── shipment.csv
+│   ├── sparkling_water.csv
+│   ├── subscription.csv
+│   ├── supplier.csv
+│   ├── transaction.csv
+│   └── user.csv
+├── SQL/
+│   ├── 02_insert_data.sql
+│   ├── 03_queries.sql
+│   ├── 04_dashboard_validation_queries.sql
+│   └── DewPoint_DataBase.sql
+├── Tableau/
+│   ├── Dew_Point.twbx
+│   └── Dew_Point_Commerce.twbx
+└── README.md
 ```
 
 ### How to Run
 
 Run the SQL files in this order in MySQL Workbench (or any MySQL client):
 
-1. `DewPoint_DataBase.sql` — creates the `dew_point` database and all 10 tables
-2. `02_insert_data.sql` — inserts sample data (10+ rows in every table)
-3. `03_queries.sql` — runs the seven required tasks listed below
+1. `SQL/DewPoint_DataBase.sql` — creates the `dew_point` database and all 10 tables
+2. `SQL/02_insert_data.sql` — inserts sample data (10+ rows in every table)
+3. `SQL/03_queries.sql` — runs the seven required tasks listed below
+4. `SQL/04_dashboard_validation_queries.sql` — validation queries for the Tableau dashboard
 
 If you've already created the database before, run `DROP DATABASE dew_point;` first to start fresh.
 
-### Required Tasks (in `03_queries.sql`)
+### Required Tasks 
 
 1. List the products we currently have in inventory
 2. Create a new product
@@ -72,14 +77,6 @@ If you've already created the database before, run `DROP DATABASE dew_point;` fi
 5. Get the most popular products for a given time range
 6. Get the least popular products for a given time range
 7. Get users who haven't purchased in the last 3 months, plus the products they normally buy
-
-### Normalization
-
-The schema is in **Boyce-Codd Normal Form**. A few notes on the changes we made during normalization:
-
-- `product_review` no longer stores `productID` directly — the product is reachable through the `transactionID` it references, so storing it again would be a transitive dependency.
-- `transaction` uses `userID` (instead of a separate `customerID`) so it points at the `user` table consistently.
-- `subscription.end_date` is no longer auto-generated from `start_date` and `duration`, since that creates a functional dependency between non-key attributes.
 
 ### Entities
 
@@ -95,8 +92,6 @@ The database contains the following entities:
 - SparklingWater
 - MineralWater
 - AlkalineWater
-
-### Strong and Weak Entities
 
 ### Strong Entities
 Strong entities have their own primary keys and don't rely on another table to exist:
@@ -115,8 +110,6 @@ Weak entities need another table to make sense:
 - **SparklingWater** — extends `Product` with carbonation info.
 - **MineralWater** — extends `Product` with mineral content info.
 - **AlkalineWater** — extends `Product` with pH level info.
-
-### Supertype and Subtype Relationship
 
 ### Supertype
 - Product
