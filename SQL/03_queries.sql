@@ -127,3 +127,40 @@ WHERE u.userID IN (
 GROUP BY u.userID, u.first_name, u.last_name, u.email,
          p.productID, p.product_name, p.product_type
 ORDER BY u.userID, total_units_purchased DESC;
+
+-- ============ Dashboard Project Visual to Query =============
+
+-- Inventory Count Query
+SELECT product_name as 'Product Name', inventory as 'Inventory'
+FROM product
+ORDER BY inventory DESC;
+
+-- Top 5 Best and worst Sellers======================
+-- Best Selling
+SELECT p.product_type AS 'Product Type',
+	   p.product_name AS 'Product Name'
+FROM product p
+JOIN transaction t
+ON t.productID = p.productID
+GROUP BY product_type, product_name
+ORDER BY SUM(t.quantity) DESC
+LIMIT 5;
+
+-- Worst Selling
+SELECT p.product_type AS 'Product Type',
+       p.product_name AS 'Product Name'
+FROM product p
+JOIN transaction t
+ON t.productID = p.productID
+GROUP BY product_type, product_name
+ORDER BY SUM(t.quantity) ASC
+LIMIT 5;
+
+-- === Newest Arrivals===========
+SELECT product_type AS 'Product Type',
+	   product_name AS 'Product Name',
+       price_each AS 'PriceEach',
+       inventory AS 'Inventory'
+FROM product
+ORDER BY productID DESC
+LIMIT 10;
