@@ -84,7 +84,7 @@ If you've already created the database before, run `DROP DATABASE dew_point;` fi
 To get an understanding of our company and customer interactions visualizations have been made using a Tableau Public Workbook.
 To access the visualizations:
 *Tableau Desktop (Public or Regular)*
-1. Download [Dew_Point_Commerce.twbx](Dea_Point_Commerce.twbx) from this database
+1. Download [Dew_Point_Commerce.twbx](Dew_Point_Commerce_3.0.twbx) from this database
 2. Open the Tableau App
 3. Select `file` -> `open` -> navigate to the downloaded file
 
