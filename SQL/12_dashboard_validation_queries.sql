@@ -210,7 +210,8 @@ LIMIT 5;
 SELECT product_type AS 'Product Type',
 	   product_name AS 'Product Name',
        price_each AS 'PriceEach',
-       inventory AS 'Inventory'
+       inventory AS 'Inventory',
+       date_added
 FROM product
-ORDER BY productID DESC
+ORDER BY onboard DESC
 LIMIT 10;

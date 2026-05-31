@@ -44,7 +44,11 @@ CREATE TABLE product(
 	size_ml INT NOT NULL DEFAULT 500,
 	flavor VARCHAR(100),
     -- indicates if we still distribute this product
-	active BOOLEAN NOT NULL DEFAULT TRUE,
+	active boolean NOT NULL DEFAULT TRUE,
+	date_added DATE NOT NULL DEFAULT(CURRENT_DATE),
+	date_discontinued DATE,
+    CONSTRAINT validDate
+		CHECK (date_discontinued IS NULL OR date_discontinued >= date_added),
 
 	CONSTRAINT productPK PRIMARY KEY (productID),
     CONSTRAINT supplierFK

@@ -49,39 +49,41 @@ INSERT INTO supplier (name, address, phone_number, email, status, onboard, offbo
 ('Desert Oasis Waters', '400 Dune Rd, Phoenix, AZ', '800-555-044', 'contact@desertoasis.com', 'Inactive', '2023-01-01', '2025-12-31'), 
 ('Fuji Springs', '500 Volcanic Way, Shizuoka, JP', '800-555-055', 'global@fujisprings.com', 'Active', '2025-02-18', NULL),
 ('Mineral Craft', '600 Limestone Ridge, Louisville, KY', '800-555-066', 'support@mincraft.com', 'Active', '2025-05-20', NULL),
-('Blue Wave Bottlers', '700 Ocean Surf, San Diego, CA', '800-555-077', 'orders@bluewave.com', 'Active', '2025-08-12', NULL),
-('HydroVibe Inc', '800 Tech Way, San Jose, CA', '800-555-088', 'b2b@hydrovibe.com', 'Active', '2025-11-05', NULL),
-('Cascade Liquid Assets', '900 Fall Line, Portland, OR', '800-555-099', 'ops@cascadeliquid.com', 'Active', '2026-01-10', NULL),
+('Blue Wave Bottlers', '700 Ocean Surf, San Diego, CA', '800-555-077', 'orders@bluewave.com', 'Active', '2025-06-01', NULL),
+('HydroVibe Inc', '800 Tech Way, San Jose, CA', '800-555-088', 'b2b@hydrovibe.com', 'Active', '2025-02-01', NULL),
+('Cascade Liquid Assets', '900 Fall Line, Portland, OR', '800-555-099', 'ops@cascadeliquid.com', 'Active', '2025-01-01', NULL),
 ('Zen Alkaline Waters', '150 Serenity Lane, Sedona, AZ', '800-555-100', 'om@zenalkaline.com', 'Active', '2026-02-01', NULL),
 ('Polar Frost', '250 Tundra Trail, Anchorage, AK', '800-555-112', 'sales@polarfrost.com', 'Active', '2026-03-15', NULL),
 ('Artesian Alliance', '350 Wellhead Dr, Memphis, TN', '800-555-113', 'info@artesianall.com', 'Active', '2026-04-01', NULL),
 ('Napa Valley Minerals', '450 Vineyard Rd, Napa, CA', '800-555-114', 'trade@napaminerals.com', 'Active', '2026-04-20', NULL),
 ('Old Stream Bottling', '550 Heritage Way, Roanoke, VA', '800-555-115', 'history@oldstream.com', 'Inactive', '2022-05-01', '2024-05-01'), 
-('Fresh Drop Distro', '650 Raincloud St, Seattle, WA', '800-555-116', 'hello@freshdrop.com', 'Active', '2026-05-01', NULL);
+('Fresh Drop Distro', '650 Raincloud St, Seattle, WA', '800-555-116', 'hello@freshdrop.com', 'Active', '2025-12-01', NULL);
 
 -- ==========================================
 -- 3. POPULATE PRODUCT TABLE (18 Rows)
 -- IDs start at 1
 -- ==========================================
-INSERT INTO product (supplierID, product_name, product_type, inventory, price_each, size_ml, flavor, active) VALUES
-(101, 'Alpine Crisp', 'Sparkling', 500, 3.00, 500, 'Lime', TRUE),
-(101, 'Mountain Peak Mineral', 'Mineral', 250, 4.50, 750, 'Original', TRUE),
-(102, 'Pacific Breeze', 'Sparkling', 0, 3.50, 500, 'Grapefruit', TRUE), 
-(102, 'Pure Alkaline 9.5', 'Alkaline', 1000, 5.00, 1000, 'Original', TRUE),
-(103, 'Glacier Freeze', 'Sparkling', 150, 4.00, 250, 'Berry', TRUE),
-(103, 'Icelandic Nature', 'Mineral', 300, 6.00, 1500, 'Original', TRUE),
-(104, 'Legacy Oasis', 'Alkaline', 0, 2.50, 500, 'Original', FALSE), 
-(105, 'Fuji Essence', 'Alkaline', 800, 5.50, 500, 'Original', TRUE),
-(106, 'Kentucky Limestone Water', 'Mineral', 400, 3.50, 1000, 'Original', TRUE),
-(107, 'Ocean Fizz', 'Sparkling', 120, 3.00, 500, 'Mango', TRUE),
-(108, 'Vibe Electro-Lite', 'Alkaline', 650, 4.00, 750, 'Lemon', TRUE),
-(109, 'Cascade Splendor', 'Mineral', 200, 7.00, 2000, 'Original', TRUE),
-(110, 'Zen Balance 8.0', 'Alkaline', 350, 4.50, 500, 'Original', TRUE),
-(111, 'Arctic Frost', 'Sparkling', 80, 3.50, 500, 'Blackberry', TRUE),
-(112, 'Deep Well Artesian', 'Mineral', 500, 3.00, 1500, 'Original', TRUE),
-(113, 'Napa Gold Mineral', 'Mineral', 150, 8.00, 750, 'Original', TRUE),
-(114, 'Old Stream Classic', 'Mineral', 0, 2.00, 500, 'Original', FALSE), 
-(115, 'Fresh Splash', 'Sparkling', 900, 2.50, 250, 'Watermelon', TRUE);
+-- onboard = date product was added to catalog (must be <= earliest transaction referencing it)
+-- offboard = date product was discontinued (NULL if still active; must be after last transaction)
+INSERT INTO product (supplierID, product_name, product_type, inventory, price_each, size_ml, flavor, active, date_added, date_discontinued) VALUES
+(101, 'Alpine Crisp',             'Sparkling', 500,  3.00, 500,  'Lime',        TRUE,  '2024-01-15', NULL),
+(101, 'Mountain Peak Mineral',    'Mineral',   250,  4.50, 750,  'Original',    TRUE,  '2024-01-15', NULL),
+(102, 'Pacific Breeze',           'Sparkling', 0,    3.50, 500,  'Grapefruit',  TRUE,  '2024-03-10', NULL),
+(102, 'Pure Alkaline 9.5',        'Alkaline',  1000, 5.00, 1000, 'Original',    TRUE,  '2024-03-10', NULL),
+(103, 'Glacier Freeze',           'Sparkling', 150,  4.00, 250,  'Berry',       TRUE,  '2024-06-01', NULL),
+(103, 'Icelandic Nature',         'Mineral',   300,  6.00, 1500, 'Original',    TRUE,  '2024-06-01', NULL),
+(104, 'Legacy Oasis',             'Alkaline',  0,    2.50, 500,  'Original',    FALSE, '2023-01-15', '2025-06-01'),
+(105, 'Fuji Essence',             'Alkaline',  800,  5.50, 500,  'Original',    TRUE,  '2025-02-18', NULL),
+(106, 'Kentucky Limestone Water', 'Mineral',   400,  3.50, 1000, 'Original',    TRUE,  '2025-05-20', NULL),
+(107, 'Ocean Fizz',               'Sparkling', 120,  3.00, 500,  'Mango',       TRUE,  '2025-06-01', NULL),
+(108, 'Vibe Electro-Lite',        'Alkaline',  650,  4.00, 750,  'Lemon',       TRUE,  '2025-02-01', NULL),
+(109, 'Cascade Splendor',         'Mineral',   200,  7.00, 2000, 'Original',    TRUE,  '2025-01-01', NULL),
+(110, 'Zen Balance 8.0',          'Alkaline',  350,  4.50, 500,  'Original',    TRUE,  '2026-02-01', NULL),
+(111, 'Arctic Frost',             'Sparkling', 80,   3.50, 500,  'Blackberry',  TRUE,  '2026-03-15', NULL),
+(112, 'Deep Well Artesian',       'Mineral',   500,  3.00, 1500, 'Original',    TRUE,  '2026-04-01', NULL),
+(113, 'Napa Gold Mineral',        'Mineral',   150,  8.00, 750,  'Original',    TRUE,  '2026-04-20', NULL),
+(114, 'Old Stream Classic',       'Mineral',   0,    2.00, 500,  'Original',    FALSE, '2022-05-15', '2024-04-01'),
+(115, 'Fresh Splash',             'Sparkling', 900,  2.50, 250,  'Watermelon',  TRUE,  '2025-12-01', NULL);
 
 -- ==========================================
 -- 4. POPULATE SUBSCRIPTION TABLE (25 Rows)
