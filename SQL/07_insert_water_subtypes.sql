@@ -16,13 +16,6 @@ USE dew_point;
 -- ==========================================
 
 INSERT INTO sparkling_water (productID, carbonation_level) VALUES
--- Original file products (sparkling type, IDs 1,3,5,10,14,18)
-(1,  'Medium'),   -- Alpine Crisp Lime
-(3,  'Light'),    -- Pacific Breeze Grapefruit
-(5,  'Heavy'),    -- Glacier Freeze Berry
-(10, 'Medium'),   -- Ocean Fizz Mango
-(14, 'Light'),    -- Arctic Frost Blackberry
-(18, 'Medium'),   -- Fresh Splash Watermelon
 
 -- New sparkling products from 05_insert_product.sql (productIDs 19–38)
 (19, 'Medium'),   -- Summit Fizz Lemon
@@ -47,27 +40,26 @@ INSERT INTO sparkling_water (productID, carbonation_level) VALUES
 (38, 'Heavy'),    -- Chesapeake Fizz Strawberry
 
 -- Low inventory sparkling (productIDs 98,99,104,109)
-(98, 'Heavy'),    -- Columbia Rare Spring Rose
-(99, 'Heavy'),    -- Obsidian Sparkling Yuzu
-(104, 'Medium'),  -- New England Wild Berry
-(109, 'Light'),   -- Prairie Peach Pop (discontinued)
+(80, 'Heavy'),    -- Columbia Rare Spring Rose
+(89, 'Heavy'),    -- Obsidian Sparkling Yuzu
+(82, 'Medium'),  -- New England Wild Berry
+(98, 'Light'),   -- Prairie Peach Pop (discontinued)
 
 -- Discontinued sparkling (productIDs 108,110,112,113,115,116,117,118,
 --                                    119,121,122,123,124,125,129)
-(108, 'Medium'),  -- Olympic Sunset Blend
-(110, 'Light'),   -- Flint Creek Tropical Fizz
-(111, 'Heavy'),   -- Rio Lime Sparkling
-(113, 'Medium'),  -- Catskill Blackberry
-(115, 'Light'),   -- Prairie Peach Pop
-(117, 'Heavy'),   -- Smoky Mountain Cherry
-(118, 'Medium'),  -- Willamette Pear Spring
-(121, 'Light'),   -- High Desert Orange
-(123, 'Medium'),  -- Bayou Vanilla Sparkle
-(125, 'Heavy'),   -- Coastal Morning Dew
-(126, 'Light'),   -- High Country Lavender
-(129, 'Medium'),  -- Loess Hills Mint
-(131, 'Light'),   -- Longleaf Pecan Spring
-(132, 'Medium');  -- Centennial Anniversary Blend
+(91, 'Medium'),  -- Olympic Sunset Blend
+(93, 'Light'),   -- Flint Creek Tropical Fizz
+(94, 'Heavy'),   -- Rio Lime Sparkling
+(96, 'Medium'),  -- Catskill Blackberry
+(100, 'Heavy'),   -- Smoky Mountain Cherry
+(101, 'Medium'),  -- Willamette Pear Spring
+(104, 'Light'),   -- High Desert Orange
+(106, 'Medium'),  -- Bayou Vanilla Sparkle
+(110, 'Heavy'),   -- Coastal Morning Dew
+(111, 'Light'),   -- High Country Lavender
+(113, 'Medium'),  -- Loess Hills Mint
+(117, 'Light'),   -- Longleaf Pecan Spring
+(118, 'Medium');  -- Centennial Anniversary Blend
 
 -- ==========================================
 -- ALKALINE WATER TABLE
@@ -75,12 +67,6 @@ INSERT INTO sparkling_water (productID, carbonation_level) VALUES
 -- ==========================================
 
 INSERT INTO alkaline_water (productID, PH_Level) VALUES
--- Original file products (alkaline type, IDs 4,7,8,11,13)
-(4,  9.5),   -- Pure Alkaline 9.5
-(7,  8.0),   -- Legacy Oasis (discontinued)
-(8,  9.0),   -- Fuji Essence
-(11, 8.5),   -- Vibe Electro-Lite
-(13, 8.0),   -- Zen Balance 8.0
 
 -- New alkaline products from 05_insert_product.sql (productIDs 39–58)
 (39, 9.0),   -- Volcanic Rise 9.0
@@ -105,19 +91,18 @@ INSERT INTO alkaline_water (productID, PH_Level) VALUES
 (58, 9.0),   -- Minnesota Ice Alkali
 
 -- Low inventory alkaline (productIDs 100, 102, 107)
-(100, 10.0), -- Rocky Reserve 10.0
-(102, 9.5),  -- Denali Black Label
-(105, 9.0),  -- Great Plains Deep
+(81, 10.0), -- Rocky Reserve 10.0
+(84, 9.5),  -- Denali Black Label
+(87, 9.0),  -- Great Plains Deep
 
 -- Discontinued alkaline (productIDs 109,112,114,116,120,122,128,130)
-(109, 8.5),  -- Black Hills Lemon pH
-(112, 8.5),  -- Piedmont Grapefruit Alkali
-(114, 8.0),  -- Cascade Reserve 8
-(116, 8.5),  -- Puget Mango pH
-(120, 8.5),  -- Tahoe pH 10
-(122, 8.0),  -- Minnesota Birch pH
-(128, 9.5),  -- Tahoe pH 10
-(130, 9.0);  -- Minnesota Birch pH (listed under correct ID)
+(92, 8.5),  -- Black Hills Lemon pH
+(95, 8.5),  -- Piedmont Grapefruit Alkali
+(97, 8.0),  -- Cascade Reserve 8
+(102, 8.5),  -- Puget Mango pH
+(114, 8.5),  -- Tahoe pH 10
+(108, 8.0)  -- Minnesota Birch pH
+; 
 
 -- ==========================================
 -- MINERAL WATER TABLE
@@ -126,14 +111,6 @@ INSERT INTO alkaline_water (productID, PH_Level) VALUES
 -- ==========================================
 
 INSERT INTO mineral_water (productID, calcium_mg, magnesium_mg, sodium_mg, mineral_source) VALUES
--- Original file products (mineral type, IDs 2,6,9,12,15,16,17)
-(2,  45.00, 12.00, 8.00,  'Alpine Rocky Mountain Aquifer'),
-(6,  60.00, 20.00, 5.00,  'Icelandic Glacial Basin'),
-(9,  35.00, 10.00, 15.00, 'Kentucky Limestone Shelf'),
-(12, 55.00, 18.00, 6.00,  'Oregon Cascade Volcanic Spring'),
-(15, 40.00, 14.00, 10.00, 'Tennessee Artesian Well'),
-(16, 80.00, 30.00, 3.00,  'Napa Valley Deep Mineral Vein'),
-(17, 30.00, 8.00,  18.00, 'Virginia Heritage Well'),
 
 -- New mineral products from 05_insert_product.sql (productIDs 59–78)
 (59, 70.00, 25.00, 7.00,  'Wyoming Absaroka Range Spring'),
@@ -158,19 +135,17 @@ INSERT INTO mineral_water (productID, calcium_mg, magnesium_mg, sodium_mg, miner
 (78, 92.00, 38.00, 2.50,  'Hawaii Pacific Rim Deep Spring'),
 
 -- Low inventory mineral (productIDs 97, 101, 103, 106, 107)
-(97, 88.00, 34.00, 2.00,  'Florida Everglades Limestone Reserve'),
-(101, 50.00, 16.00, 6.00, 'New York Adirondack Spring'),
-(103, 78.00, 29.00, 3.00, 'Arizona Mesa Rare Mineral Spring'),
-(106, 95.00, 40.00, 1.00, 'Gulf of Mexico Deep Offshore Spring'),
-(107, 92.00, 36.00, 2.50, 'Wyoming Teton Black Label Aquifer'),
+(79, 88.00, 34.00, 2.00,  'Florida Everglades Limestone Reserve'),
+(85, 50.00, 16.00, 6.00, 'New York Adirondack Spring'),
+(86, 78.00, 29.00, 3.00, 'Arizona Mesa Rare Mineral Spring'),
+(83, 95.00, 40.00, 1.00, 'Gulf of Mexico Deep Offshore Spring'),
+(90, 92.00, 36.00, 2.50, 'Wyoming Teton Black Label Aquifer'),
 
 -- Discontinued mineral (productIDs 114,117,119,121,124,125,126,127,128,130,131)
-(114, 46.00, 13.00, 9.00,  'Utah Salt Flat Ancient Aquifer'),
-(117, 68.00, 23.00, 4.00,  'New York Finger Lakes Basin'),
-(119, 72.00, 26.00, 3.00,  'Washington Olympic Peninsula Spring'),
-(121, 55.00, 17.00, 8.00,  'Wyoming Absaroka Classic Basin'),
-(124, 48.00, 14.00, 10.00, 'Washington Salish Cucumber Spring'),
-(127, 70.00, 24.00, 5.00,  'California Tahoe Mineral Vein'),
-(128, 82.00, 31.00, 2.00,  'Hawaii Hilina Volcanic Spring'),
-(129, 54.00, 16.00, 19.00, 'Minnesota Iron Range Classic'),
-(130, 38.00, 11.00, 12.00, 'Georgia Longleaf Pecan Aquifer');
+(103, 46.00, 13.00, 9.00,  'Utah Salt Flat Ancient Aquifer'),
+(105, 68.00, 23.00, 4.00,  'New York Finger Lakes Basin'),
+(107, 72.00, 26.00, 3.00,  'Washington Olympic Peninsula Spring'),
+(109, 55.00, 17.00, 8.00,  'Wyoming Absaroka Classic Basin'),
+(112, 48.00, 14.00, 10.00, 'Washington Salish Cucumber Spring'),
+(115, 82.00, 31.00, 2.00,  'Hawaii Hilina Volcanic Spring'),
+(116, 54.00, 16.00, 19.00, 'Minnesota Iron Range Classic');

@@ -18,7 +18,7 @@ INSERT INTO product_review (reviewID, userID, transactionID, rating, review_comm
 -- HIGH-SPEND / LOYAL CUSTOMERS — Detailed, mostly positive reviews
 -- ============================================================
 ('REV-2025-101', 10026, 6000031, 5, 'Cascade Ion 10 is unreal. I feel the difference in hydration every single week. Keeping this forever.', '2025-07-06'),
-('REV-2025-102', 10026, 6000032, 5, 'Tahoe Blue Mineral is worth every penny. Crisp, clean, zero aftertaste. My household's staple.', '2025-09-07'),
+('REV-2025-102', 10026, 6000032, 5, 'Tahoe Blue Mineral is worth every penny. Crisp, clean, zero aftertaste. My households staple.', '2025-09-07'),
 ('REV-2025-103', 10026, 6000033, 4, 'Teton Peak 9.5 is excellent. Consistent pH across every bottle in the case. One bottle had a cracked seal though.', '2025-11-06'),
 ('REV-2026-101', 10026, 6000034, 5, 'Back on Cascade Ion — the best alkaline available through DewPoint. Exceptional.', '2026-01-07'),
 ('REV-2026-102', 10026, 6000035, 5, 'Hilina Volcanic is unlike anything I have had before. Volcanic minerals are completely unique.', '2026-03-05'),
