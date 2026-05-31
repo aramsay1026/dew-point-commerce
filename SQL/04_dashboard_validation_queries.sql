@@ -174,3 +174,43 @@ FROM (
 ) user_activity
 GROUP BY days_since_last_purchase
 ORDER BY FIELD(days_since_last_purchase, '0-30 days', '31-60 days', '61-90 days', '91-180 days', '180+ days');
+
+-- =====================================================
+--         Dashboard Project Visual to Query 
+-- =====================================================
+
+-- Inventory Count Query: Inventory Dashboard (Bea)
+SELECT product_name as 'Product Name', inventory as 'Inventory'
+FROM product
+ORDER BY inventory DESC;
+
+-- Top 5 Best and worst Sellers: Sales & Popularity Dashboard (Amy)
+-- Best Selling
+SELECT p.product_type AS 'Product Type',
+	   p.product_name AS 'Product Name'
+FROM product p
+JOIN transaction t
+ON t.productID = p.productID
+GROUP BY product_type, product_name
+ORDER BY SUM(t.quantity) DESC
+LIMIT 5;
+
+-- Worst Selling
+SELECT p.product_type AS 'Product Type',
+       p.product_name AS 'Product Name'
+FROM product p
+JOIN transaction t
+ON t.productID = p.productID
+GROUP BY product_type, product_name
+HAVING SUM(t.quantity) > 0
+ORDER BY SUM(t.quantity) ASC
+LIMIT 5;
+
+--  Newest Arrivals: Project Management Dashboard (Amy)
+SELECT product_type AS 'Product Type',
+	   product_name AS 'Product Name',
+       price_each AS 'PriceEach',
+       inventory AS 'Inventory'
+FROM product
+ORDER BY productID DESC
+LIMIT 10;
