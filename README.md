@@ -230,6 +230,7 @@ The subtype tables share all the base info from `Product` but each one adds its 
 - SQL recreations of dashboard visualizations - `12_dashboard_validation_queries`
 - Database connection to Tableau prep: Data preparation, connection, and extraction to all CSV files
 - Visualization Vs SQL comparison pdf - `Dew_Point_Commerce_visuals.pdf`
+- Dashboard Formatting
 - Visualizations:
   - Inventory Count
   - Flavors
