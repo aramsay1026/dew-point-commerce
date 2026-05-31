@@ -49,16 +49,16 @@ dew-point-commerce/
 │   └── user.csv
 ├── SQL/
 │   ├── 02_insert_data.sql
-│   ├── 03_queries.sql
-│   ├── 04_dashboard_validation_queries.sql
-│   ├── 05_insert_supplier.sql
-│   ├── 06_insert_product.sql
-│   ├── 07_insert_water_subtypes.sql
-│   ├── 08_insert_user.sql
-│   ├── 09_insert_subscription.sql
-│   ├── 10_insert_transaction.sql
-│   ├── 11_insert_shipment.sql
-│   ├── 12_insert_review.sql
+│   ├── 03_insert_supplier.sql
+│   ├── 04_insert_product.sql
+│   ├── 05_insert_water_subtypes.sql
+│   ├── 06_insert_user.sql
+│   ├── 07_insert_subscription.sql
+│   ├── 08_insert_transaction.sql
+│   ├── 09_insert_shipment.sql
+│   ├── 10_insert_review.sql
+│   ├── 11_queries.sql
+│   └── 12_dashboard_validation_queries.sql
 ├── Tableau/
 │   ├── Dew_Point.twbx
 │   └── Dew_Point_Commerce.twbx
