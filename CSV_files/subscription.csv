@@ -24,3 +24,116 @@
 100023,10023,Downpour,Weekly,Year,24,Active,3/1/2026,3/1/2027
 100024,10024,Dew,Bi Weekly,6 Month,8,Active,2/28/2026,8/28/2026
 100025,10025,Drizzle,Monthly,Year,16,Active,5/10/2026,5/10/2027
+100026,10026,Downpour,Weekly,Year,24,Active,6/1/2025,6/1/2026
+100027,10027,Downpour,Weekly,Year,24,Active,9/15/2025,9/15/2026
+100028,10028,Drizzle,Bi Weekly,Year,16,Active,11/1/2025,11/1/2026
+100029,10029,Downpour,Weekly,Year,24,Active,1/1/2026,1/1/2027
+100030,10030,Drizzle,Weekly,6 Month,16,Active,2/1/2026,8/1/2026
+100031,10031,Downpour,Bi Weekly,Year,24,Active,1/15/2026,1/15/2027
+100032,10032,Drizzle,Weekly,Year,16,Active,8/1/2025,8/1/2026
+100033,10033,Downpour,Weekly,Year,24,Active,3/1/2026,3/1/2027
+100034,10034,Downpour,Weekly,6 Month,24,Active,12/1/2025,6/1/2026
+100035,10035,Drizzle,Bi Weekly,Year,16,Active,2/15/2026,2/15/2027
+100036,10036,Downpour,Weekly,Year,24,Active,7/1/2025,7/1/2026
+100037,10037,Downpour,Weekly,Year,24,Active,1/20/2026,1/20/2027
+100038,10038,Drizzle,Weekly,6 Month,16,Active,3/15/2026,9/15/2026
+100039,10039,Downpour,Bi Weekly,Year,24,Active,4/1/2026,4/1/2027
+100040,10040,Downpour,Weekly,Year,24,Active,10/1/2025,10/1/2026
+100041,10026,Dew,Monthly,6 Month,8,Inactive,12/1/2024,6/1/2025
+100042,10029,Mist,Bi Weekly,Month,4,Inactive,8/1/2024,9/1/2024
+100043,10033,Dew,Bi Weekly,6 Month,8,Inactive,6/1/2025,12/1/2025
+100044,10036,Drizzle,Weekly,6 Month,16,Inactive,9/1/2024,3/1/2025
+100045,10040,Mist,Weekly,Month,4,Inactive,3/1/2025,4/1/2025
+100046,10041,Mist,Weekly,Month,4,Inactive,10/1/2025,11/1/2025
+100047,10042,Dew,Bi Weekly,6 Month,8,Inactive,4/1/2025,10/1/2025
+100048,10043,Drizzle,Monthly,Year,16,Inactive,8/1/2024,8/1/2025
+100049,10044,Dew,Monthly,6 Month,8,Inactive,1/1/2025,7/1/2025
+100050,10045,Mist,Weekly,Month,4,Inactive,9/1/2025,10/1/2025
+100051,10046,Downpour,Weekly,Year,24,Inactive,6/1/2024,6/1/2025
+100052,10047,Dew,Bi Weekly,6 Month,8,Inactive,3/1/2025,9/1/2025
+100053,10048,Drizzle,Monthly,6 Month,16,Inactive,11/1/2024,5/1/2025
+100054,10049,Mist,Monthly,Month,4,Inactive,7/1/2025,8/1/2025
+100055,10050,Dew,Weekly,6 Month,8,Inactive,5/1/2025,11/1/2025
+100056,10051,Drizzle,Bi Weekly,Year,16,Inactive,3/1/2024,3/1/2025
+100057,10052,Downpour,Monthly,Year,24,Inactive,10/1/2023,10/1/2024
+100058,10053,Mist,Weekly,Month,4,Inactive,11/1/2025,12/1/2025
+100059,10054,Dew,Bi Weekly,6 Month,8,Inactive,2/1/2025,8/1/2025
+100060,10055,Mist,Monthly,Month,4,Inactive,8/1/2025,9/1/2025
+100061,10056,Drizzle,Weekly,6 Month,16,Inactive,9/1/2024,3/1/2025
+100062,10057,Dew,Bi Weekly,6 Month,8,Inactive,6/1/2025,12/1/2025
+100063,10058,Mist,Weekly,Month,4,Inactive,10/1/2025,11/1/2025
+100064,10059,Dew,Monthly,6 Month,8,Inactive,4/1/2025,10/1/2025
+100065,10060,Drizzle,Bi Weekly,Year,16,Inactive,7/1/2024,7/1/2025
+100066,10043,Mist,Weekly,Month,4,Inactive,4/1/2024,5/1/2024
+100067,10046,Dew,Monthly,6 Month,8,Inactive,10/1/2023,4/1/2024
+100068,10052,Mist,Bi Weekly,Month,4,Inactive,6/1/2023,7/1/2023
+100069,10061,Mist,Monthly,Month,4,Active,5/1/2026,6/1/2026
+100070,10062,Dew,Monthly,Month,8,Inactive,1/1/2026,2/1/2026
+100071,10063,Mist,Monthly,Month,4,Inactive,12/1/2025,1/1/2026
+100072,10064,Dew,Bi Weekly,Month,8,Active,4/15/2026,5/15/2026
+100073,10065,Mist,Monthly,Month,4,Inactive,11/1/2025,12/1/2025
+100074,10066,Dew,Monthly,Month,8,Inactive,2/1/2026,3/1/2026
+100075,10067,Mist,Monthly,Month,4,Inactive,3/1/2026,4/1/2026
+100076,10068,Dew,Bi Weekly,Month,8,Active,5/10/2026,6/10/2026
+100077,10069,Mist,Monthly,Month,4,Inactive,10/1/2025,11/1/2025
+100078,10070,Mist,Monthly,Month,4,Active,5/15/2026,6/15/2026
+100079,10071,Dew,Monthly,6 Month,8,Inactive,5/1/2025,11/1/2025
+100080,10072,Mist,Monthly,Month,4,Inactive,9/1/2025,10/1/2025
+100081,10073,Mist,Bi Weekly,Month,4,Active,4/20/2026,5/20/2026
+100082,10074,Dew,Monthly,Month,8,Inactive,1/15/2026,2/15/2026
+100083,10075,Mist,Monthly,Month,4,Inactive,8/1/2025,9/1/2025
+100084,10076,Dew,Bi Weekly,Month,8,Active,5/20/2026,6/20/2026
+100085,10077,Mist,Monthly,Month,4,Inactive,7/1/2025,8/1/2025
+100086,10078,Mist,Monthly,Month,4,Active,5/1/2026,6/1/2026
+100087,10079,Dew,Monthly,Month,8,Inactive,6/1/2025,7/1/2025
+100088,10080,Mist,Monthly,Month,4,Inactive,3/15/2026,4/15/2026
+100089,10081,Mist,Monthly,Month,4,Active,4/1/2026,5/1/2026
+100090,10082,Dew,Bi Weekly,Month,8,Inactive,12/1/2025,1/1/2026
+100091,10083,Mist,Monthly,Month,4,Inactive,11/15/2025,12/15/2025
+100092,10084,Mist,Monthly,Month,4,Active,5/5/2026,6/5/2026
+100093,10085,Dew,Monthly,6 Month,8,Inactive,4/1/2025,10/1/2025
+100094,10086,Mist,Monthly,Month,4,Inactive,10/15/2025,11/15/2025
+100095,10087,Mist,Bi Weekly,Month,4,Active,5/12/2026,6/12/2026
+100096,10088,Dew,Monthly,Month,8,Inactive,2/15/2026,3/15/2026
+100097,10089,Mist,Monthly,Month,4,Inactive,9/15/2025,10/15/2025
+100098,10090,Mist,Monthly,Month,4,Active,4/25/2026,5/25/2026
+100099,10091,Dew,Bi Weekly,Month,8,Inactive,1/10/2026,2/10/2026
+100100,10092,Mist,Monthly,Month,4,Active,5/18/2026,6/18/2026
+100101,10093,Dew,Monthly,Month,8,Inactive,10/1/2025,11/1/2025
+100102,10094,Mist,Monthly,Month,4,Active,5/22/2026,6/22/2026
+100103,10095,Dew,Monthly,6 Month,8,Inactive,6/1/2025,12/1/2025
+100104,10096,Mist,Monthly,Month,4,Inactive,3/1/2026,4/1/2026
+100105,10097,Dew,Bi Weekly,Month,8,Active,5/25/2026,6/25/2026
+100106,10098,Mist,Monthly,Month,4,Inactive,8/15/2025,9/15/2025
+100107,10099,Mist,Monthly,Month,4,Active,4/10/2026,5/10/2026
+100108,10100,Dew,Monthly,Month,8,Inactive,1/20/2026,2/20/2026
+100109,10101,Mist,Monthly,Month,4,Inactive,7/1/2025,8/1/2025
+100110,10102,Dew,Monthly,Month,8,Inactive,9/1/2025,10/1/2025
+100111,10103,Mist,Monthly,Month,4,Active,5/28/2026,6/28/2026
+100112,10104,Dew,Monthly,Month,8,Inactive,11/1/2025,12/1/2025
+100113,10105,Mist,Monthly,Month,4,Inactive,2/1/2026,3/1/2026
+100114,10106,Dew,Monthly,Month,8,Inactive,5/1/2025,6/1/2025
+100115,10107,Mist,Monthly,Month,4,Active,5/1/2026,6/1/2026
+100116,10108,Dew,Monthly,Month,8,Inactive,12/15/2025,1/15/2026
+100117,10109,Mist,Monthly,Month,4,Inactive,6/1/2025,7/1/2025
+100118,10110,Mist,Monthly,Month,4,Inactive,4/1/2026,5/1/2026
+100119,10111,Dew,Bi Weekly,Month,8,Active,5/20/2026,6/20/2026
+100120,10112,Mist,Monthly,Month,4,Inactive,10/1/2025,11/1/2025
+100121,10113,Mist,Monthly,Month,4,Inactive,8/1/2025,9/1/2025
+100122,10114,Dew,Monthly,Month,8,Inactive,3/1/2026,4/1/2026
+100123,10115,Mist,Monthly,Month,4,Active,4/15/2026,5/15/2026
+100124,10116,Dew,Monthly,Month,8,Inactive,12/1/2025,1/1/2026
+100125,10117,Mist,Monthly,Month,4,Inactive,7/15/2025,8/15/2025
+100126,10118,Mist,Monthly,Month,4,Active,5/10/2026,6/10/2026
+100127,10119,Dew,Bi Weekly,Month,8,Inactive,2/10/2026,3/10/2026
+100128,10120,Mist,Monthly,Month,4,Inactive,9/15/2025,10/15/2025
+100129,10121,Mist,Monthly,Month,4,Inactive,1/5/2026,2/5/2026
+100130,10122,Dew,Monthly,Month,8,Active,5/25/2026,6/25/2026
+100131,10123,Mist,Monthly,Month,4,Inactive,11/15/2025,12/15/2025
+100132,10124,Mist,Monthly,Month,4,Inactive,3/20/2026,4/20/2026
+100133,10125,Dew,Monthly,Month,8,Inactive,5/15/2025,6/15/2025
+100134,10126,Mist,Monthly,Month,4,Active,5/15/2026,6/15/2026
+100135,10127,Mist,Monthly,Month,4,Inactive,6/15/2025,7/15/2025
+100136,10128,Dew,Bi Weekly,Month,8,Inactive,1/1/2026,2/1/2026
+100137,10129,Mist,Monthly,Month,4,Inactive,10/15/2025,11/15/2025
+100138,10130,Dew,Monthly,Month,8,Active,5/28/2026,6/28/2026
