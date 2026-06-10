@@ -222,7 +222,7 @@ The subtype tables share all the base info from `Product` but each one adds its 
   - User Behavior
   - Product Management
 - Story Board:
-  - Database Imputation
+  - Slides 8-11
 
 ##### Bea Sauve
 - README information
@@ -241,4 +241,4 @@ The subtype tables share all the base info from `Product` but each one adds its 
   - Inventory
 - Story Board
   -   Initial design
-  - Slides 1-8 and 10
+  - Slides 1-7 and 12
